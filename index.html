@@ -4,30 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1만 시간의 법칙</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
   </head>
   <body>
-
     <header>
       <h1>
         <span class="sr-only">1만 시간의 법칙</span>
-    <img src="./img/title.png" alt="1만 시간의 법칙">
-  </h1>
+        <img src="./img/title.png" alt="1만 시간의 법칙">
+      </h1>
       <p class="subtitle">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
     </header>
 
     <main>
       <!-- 설명 영역 -->
-<section aria-label="법칙 설명">
-  <div class="quote-box">
-    <img src="./img/quotes.png" alt="큰 따옴표 배경" class="quote-bg">
-    <p class="quote-text">
-      <strong>1만 시간의 법칙은</strong><br>
-      어떤 분야의 전문가가 되기 위해서는<br>
-      최소한 1만 시간의 훈련이 필요하다는 법칙이다.
-    </p>
-  </div>
-</section>
+      <section aria-label="법칙 설명">
+        <div class="quote-box">
+          <img src="./img/quotes.png" alt="큰 따옴표 배경" class="quote-bg">
+          <p class="quote-text">
+            <strong>1만 시간의 법칙은</strong><br>
+            어떤 분야의 전문가가 되기 위해서는<br>
+            최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+          </p>
+        </div>
+      </section>
 
       <!-- 입력 폼 -->
       <section aria-label="입력 폼">
@@ -41,38 +41,50 @@
           <p>
             그래서 앞으로 매일 하루에
             <label for="time" class="sr-only">시간박스</label>
-            <input type="number" id="time" placeholder="예)5" required />
+            <input type="text" id="time" placeholder="예)5" required />
             시간씩 훈련할 것이다.
           </p>
-          <button type="button" id="question">
-            나는 며칠 동안 훈련을 해야 1만 시간이 될까?
-          </button>
+          <div class="question-box">
+            <div class="question-wrapper">
+              <button type="button" id="question" class="btn question">
+                나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+              </button>
+              <img src="./img/click.png" alt="클릭 아이콘" class="click-img">
+            </div>
+          </div>
         </form>
       </section>
 
       <!-- 결과 영역 -->
       <section aria-label="결과 영역">
-        <article hidden id="result-box">
-          <h2>결과</h2>
+        <article id="result-box">
           <p>
-            당신은 <strong id="field-result"></strong> 되기 위해서<br>
-            대략 <strong id="day-result"></strong>일 이상 훈련하셔야 합니다! :)
+            당신은 <span class="highlight">프로그래밍</span> 되기 위해서<br>
+            대략 <span class="highlight">5110일</span> 이상 훈련하셔야 합니다! :)
           </p>
-          <nav>
-            <button type="button">훈련하러 가기 GO!GO!</button>
-            <button type="button">공유하기</button>
-          </nav>
+          <div>
+            <button type="button" class="btn btn-primary">훈련하러 가기 GO!GO!</button>
+            <button type="button" class="btn btn-secondary">공유하기</button>
+          </div>
         </article>
       </section>
     </main>
 
+    <!-- 화이팅 카드 -->
+    <div class="support-card">
+      <h1 class="support-title">화이팅!! ♥♥♥</h1>
+      <p class="support-subtitle">당신의 꿈을 응원합니다!</p>
+      <img src="./img/licat.png" alt="응원하는 라이캣" class="support-licat" />
+      <button class="btn btn-primary support-btn">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+    </div>
+
+    <!-- 푸터 -->
     <footer>
-      <img src="./img/logo.png" alt="위니브로고"><br>
+      <img src="./img/logo.png" alt="위니브 로고"><br>
       <small>
         본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br>
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
       </small>
     </footer>
-
   </body>
 </html>
