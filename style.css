@@ -13,7 +13,6 @@
 body {
   background-color: #5b2c90;
   color: white;
-  font-family: 'arial', sans-serif;
   line-height: 1.6;
   text-align: center;
   padding: 40px 20px;
@@ -26,9 +25,41 @@ h1 img {
   margin: 0 auto;
 }
 
-.subtitle {
-  margin-bottom: 40px;
-  font-style: italic;
+.title-img {
+  opacity: 0.8;
+}
+
+.title-width-clock{
+   position: relative;
+  display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.clock-img {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  z-index: 10;
+  opacity: 0.85;
+  transition: transform 0.2s;
+}
+
+.clock-img:hover {
+  transform: scale(1.1);
+}
+
+/* 1만시간 글꼴 크게 */
+.bigger{
+  font-size: 1.5em;
+}
+
+/* 공백추가 */
+.form-section{
+  margin-top:100px;
 }
 
 .quote-box {
@@ -36,6 +67,7 @@ h1 img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
 
@@ -82,7 +114,6 @@ input[type="text"] {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-size: 1rem;
   white-space: nowrap;
 }
@@ -106,6 +137,10 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+#result-box {
+  margin-top: 50px; /* 원하는 만큼 조절 가능 */
 }
 
 .question-wrapper {
@@ -177,3 +212,4 @@ footer {
   font-size: 0.8rem;
   opacity: 0.8;
 }
+
